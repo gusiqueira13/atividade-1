@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro americanas</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+            color: #666666;
+            font-size: 16px;
+            display: block;
+            bottom: 10px;
+        }
+
+        header{
+            background-color: #f80032;
+
+        }
+ 
+        input{
+            border-radius: 5px;
+            margin: 8px 0px 0px;
+            padding: 16px 15px;
+            text-align: center;
+            margin: 8px 0px 0px;
+            border-color: #666666;
+            left: 0px;
+
+        }
+
+        #parte1{
+            padding: 56px 0px 26px;
+        }
+
+        div{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        form{
+            margin: 0px 193.125px;
+            
+        }
+
+        #genero{
+            display: inline;
+        }
+
+        label{
+            left: 0px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<header>
+<img src="logo_americanas.jpg" alt="" height="40px" style="cursor: pointer; padding: 40px;" >    
+</header>
+
+<br><br>
+    <section id="parte1" >
+        <div id="titulo" >
+    <h2 align="center" style="font-size: 36px;" >criar seu cadastro</h2>
+    <p align="center" style="font-size: 18px;" >veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :) </p>
+    <p align="center" style="font-size: 12px; color: #333333;" >
+        <span>*</span>campos obrigatórios</p>
+    </div>
+    </section>
+
+<br>
+<section>
+    <form action="" method="post" align="center">
+        <div> <h3><span>*</span> <label>nome completo</label><br>
+            <input type="text" name="nome" id="">
+        </div>
+
+        <div id="genero"><h3><span>*</span> <label> gênero</label></h3>
+            <p style="font-size: 14px;" >pra gente te conhecer um pouquinho melhor :) </p>
+            <input type="radio" name="feminino" style="" >feminino
+            <input type="radio" name="masculino" >masculino 
+            <input type="radio" name="não informar" >não informar
+        </div><br>
+
+        <div><h3><span>*</span><label>data de nascimento</label></h3>
+            <p style="font-size: 14px;">necessário pra identificar a maioridade, no formato DD/MM/AAAA</p>
+            <input type="date" name="data de nascimento" id="" placeholder="__/__/____" >
+        </div><br>
+
+        <div><h3><span>*</span><label>CPF</label></h3>
+            <p style="font-size: 14px;">necessário pra emissão das Notas Fiscais</p>
+            <input type="tel" name="CPF" id="" required mask="999.999.999-99" placeholder="___.___.___-__" maxlength="11" ><br>
+            <a href="https://empresas.americanas.com.br/simple-login/cadastro?configurationName=acom-empresas" style="color: #666666;">é pessoa jurídica? conheça a americanas empresas</a>
+        </div><br>
+
+        <div><h3><span>*</span><label>telefone</label></h3>
+            <p style="font-size: 14px;">caso a gente precise entrar em contato sobre seus pedidos</p>
+            <input type="tel" name="telefone" id=""  maxlength="11"  placeholder="(  ) _____-____" ><br>
+            <input type="checkbox" name="notificações" id="" style="background-color: #f80032;" > receber notificações por whatsapp
+        </div><br>
+
+        <div><h3><span>*</span><label>e-mail</label></h3>
+            <input type="email" name="email" ><br>
+            <input type="checkbox" name="email_promocional" id="" value checked style="background-color: #f80032;" >receber e-mails promocionais
+        </div><br>
+
+        <div><h3><span>*</span><label>senha</label></h3>
+            <p style="font-size: 14px;">precisa ter entre 6 e 20 caracteres</p>
+            <input type="password" name="senha" id="" maxlength="20" minlength="6"><br>
+            <input type="range" name="intesidade_senha" id="" min="0" max="10"><br> <!--sei q ta errado porem ainda n sei como fzr isso-->
+            <input type="checkbox" name="compartilhar_dados" id="" value checked style="background-color: #f80032; margin: 0px 8px 0px 0px;">compartilhar meus dados com parceiros para ter <br> conteúdos personalizados, veja <a href="https://www.americanas.com.br//hotsite/politica-de-privacidade" target="blank" style="color: #666666;">como funciona</a>
+        </div><br><br>
+
+        <div>
+            <input type="submit" value="criar seu cadastro" style="background-color: #f80032; border: 0px; color: white;" >
+        </div><br><br>
+
+        <div> <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro,<br> você concorda com a nossa</p><a href="/HTML's/Política_de_Privacidade.html" style="color: #666666;">Política de Privacidade</a>
+        </div><br><br>
+
+        <div><p>já tem cadastro?</p><a href="pagina_de_login.html" style="color: #666666;"> entrar</a>
+        </div>
+
+    </form>
+
+</section>
+
+</body>
+</html>
